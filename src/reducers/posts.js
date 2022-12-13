@@ -10,7 +10,7 @@ const posts = (posts = [], action) => {
 
         case UPDATE:
             // gonna loop over the posts array and finding the post with given id and returning the changes;
-            console.log(posts);
+            // console.log(posts);
             return posts.map((post) => (post._id === action.payload._id ? action.payload : post));
 
         case DELETE:
