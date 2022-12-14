@@ -13,10 +13,16 @@ export default makeStyles((theme) => ({
   },
   heading: {
     color: "rgba(0,183,255, 1)",
-    textDecoration: 'none'
+    textDecoration: 'none',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.75rem'
+    }
   },
   image: {
     marginLeft: "15px",
+    [theme.breakpoints.down('sm')]: {
+      height: '40px',
+    }
   },
   toolbar: {
     display: 'flex',

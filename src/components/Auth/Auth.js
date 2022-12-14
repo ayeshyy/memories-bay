@@ -132,9 +132,7 @@ const Auth = () => {
             type="standard"
             theme="filled_blue"
             size="large"
-            width="360"
           />
-
           <Grid container justifyContent="center">
             <Grid item>
               <Button className={classes.switchBtn} onClick={switchMode}>
