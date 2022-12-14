@@ -43,13 +43,13 @@ const Navbar = () => {
         <Typography
           component={Link}
           to="/"
-          className={classes.heading}
+          className={user?.result ? classes.signinHeading: classes.heading}
           variant="h2"
           align="center"
         >
           Memories
         </Typography>
-        <img className={classes.image} src={memories} alt="icon" height={60} />
+        <img className={user?.result ? classes.signinImage: classes.image} src={memories} alt="icon" height={60} />
       </div>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (
