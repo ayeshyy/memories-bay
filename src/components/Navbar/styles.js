@@ -9,7 +9,10 @@ export default makeStyles((theme) => ({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: '10px 50px'
+    padding: '10px 50px',
+    [theme.breakpoints.down("sm")]: {
+      padding: "10px 20px"
+    }
   },
   heading: {
     color: "rgba(0,183,255, 1)",
@@ -21,7 +24,8 @@ export default makeStyles((theme) => ({
   image: {
     marginLeft: "15px",
     [theme.breakpoints.down('sm')]: {
-      height: '40px',
+      height: '30px',
+      marginLeft: "5px"
     }
   },
   toolbar: {
@@ -46,4 +50,9 @@ export default makeStyles((theme) => ({
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
   },
+  signin: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "25px",
+    }
+  }
 }));
