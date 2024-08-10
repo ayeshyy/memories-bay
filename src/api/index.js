@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://dark-cyan-rabbit-tux.cyclic.app' });
+const API = axios.create({ baseURL: 'https://memories-bay.vercel.app/' });
 
 //here we created the header and passing the token saved in localStorage which is gonna be bound with every request;
 API.interceptors.request.use((req) => {
